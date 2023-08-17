@@ -1,0 +1,16 @@
+body {
+     font-family: Futura, Helvetica, Arial, sans-serif;
+     color: #152877;
+}
+
+#title {
+    font-size: 140%;
+    font-weight: bold;
+    color: #152877;
+    text-decoration: none;
+}
+
+.nav-item .btn {
+    background-color: #152877;
+    color: #ffffff;
+}
