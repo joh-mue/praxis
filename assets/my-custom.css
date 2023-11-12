@@ -14,3 +14,16 @@ body {
     background-color: #152877;
     color: #ffffff;
 }
+
+$white: #ffffff;
+
+$theme-colors: (
+    "light":      #d4e7d4,
+    "dark":       #340b40,
+    "primary":    #f34953,
+    "secondary":  #d9abe6,
+    "info":       #6ba07c,
+    "success":    #70bc26,
+    "warning":    #fec889,
+    "danger":     #fb136c,
+);
