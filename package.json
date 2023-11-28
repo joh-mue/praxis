@@ -1,7 +1,7 @@
 {
-  "name": "sass-js",
-  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
-  "version": "0.0.0",
+  "name": "Familienpraxis-Behrendt",
+  "description": "A small business website",
+  "version": "0.0.1",
   "private": true,
   "repository": "twbs/examples",
   "license": "MIT",
