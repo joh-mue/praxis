@@ -19,22 +19,20 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <!-- Custom Styleshee -->
-    <link rel="stylesheet" type="text/css" href="assets/my-custom.css">
+    <!-- Custom Stylesheet -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/my-custom.css"> -->
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="assets/my-custom.css">
-
     <title></title>
   </head>
   <body>  <!-- style="background: #2b4f2f"> -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Familienpraxis–Behrendt</a>
+      <div class="container-fluid" style="background: #2b4f2f">
+        <a class="navbar-brand py-4" href="#">Familienpraxis–Behrendt</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,13 +66,13 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form> -->
-          <span>0190/666-666 info@familienpraxis-behrendt.de</span>
+          <span>0190/666-666 info(at)familienpraxis-behrendt.de</span>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row" style="background-image: linear-gradient(80deg, #2b4f2f, #bcd12b);">
+    <div class="container-fluid"  style="color: #ffffff;">
+<!--       <div class="row" style="background-image: linear-gradient(80deg, #2b4f2f, #bcd12b);">
         <div class="row text-center" style="height: 5rem"></div>
 
         <div class="row text-center" style="height: 5rem">
@@ -88,14 +86,15 @@
         <div class="row my-5">
           <div class="col col-6 offset-5"><img src="assets/undraw_medicine_b-1-ol-2.svg" class="img-fluid mx-auto" alt="Aerzte"></div>
         </div>
-      </div>
+      </div> -->
       
       <div class="row">
-        <div class="col-lg-1 bg-primary"> <!--  style="background: #bcd12b"> -->
+        <div class="col-lg-1 bg-primary">
           1
         </div>
         <div class="col-lg-1" style="background: #2b4f2f">
           2
+          <button type="button" class="btn btn-primary">Primary</button>
         </div>
         <div class="col-lg-1" style="background: #bcd12b">
           3
@@ -129,17 +128,48 @@
         </div>
       </div>
 
-      <div class="row" style="background-image: linear-gradient(80deg, #2b4f2f, #bcd12b);">
-        <div class="col-lg-4 offset-7">
-          <img src="assets/undraw_medicine_b-1-ol-2.svg" class="img-fluid mx-auto">
+      <div class="row py-5" style="background-image: linear-gradient(80deg, #2b4f2f, #bcd12b);">
+        
+        <div class="row align-items-center">
+          <div class="offset-1">
+            <h1 class="display-2">Familienpraxis-Behrendt</h1>
+          </div>
         </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-4  offset-1">
+            <p>Liebe Patientinnen und Patienten,<br>
+            ein herzliches Willkommen in unserer Familienpraxis! Wir freuen uns darauf, Sie und Ihre Familie in allen Gesundheitsfragen zu begleiten. Bei uns steht die ganzheitliche Betreuung im Mittelpunkt, denn Ihre Gesundheit liegt uns am Herzen.</p>
+            <div class="card">
+              <div class="card-body" style="background-color: rgba(255, 255, 255, 0.7);">
+                  Sie erreichen uns unter<br>
+                  Tel: 0190/666-666<br>
+                  Mail: info (at) familienpraxis-behrendt.de<br>
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="card-body" style="background-color: rgba(255, 255, 255, 0.7);">
+                Sie finden unsere Praxis in der<br>
+                Störstraße 18<br>
+                19086 Plate
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <img src="assets/undraw_medicine_b-1-ol-2.svg" class="img-fluid mx-auto">
+          </div>
+        </div>
+
+        <hr class="mt-5">
       </div>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="./assets/images/martha-dominguez-de-gouveia-nMyM7fxpokE-unsplash.jpg" class="img-fluid">
+      <div class="row py-5 align-items-center" style="background: #2b4f2f;">
+        <div class="col-lg-5 offset-1">
+          <img src="./assets/undraw_doctor_kw-5-l.svg" class="img-fluid mx-auto">
         </div>
-        <div class="col-lg-4 offset-1 ">
+        <div class="col-lg-4 offset-1">
             <h2>Öffnungszeiten:</h2>
             <table class="table">
               <tbody>
@@ -150,7 +180,7 @@
                 <tr><th>Freitag</th><td>8:00–11:00</td><td></td></tr>
               </tbody>
             </table>
-            <span>Sprechstunde zu den Öffnungszeiten, Dienstag bis 12 und Donnerstag bis 16 Uhr</span>
+            <span>Sprechstunde zu den Öffnungszeiten,<br>Dienstag bis 12 und Donnerstag bis 16 Uhr</span>
         </div>
       </div>
       <div class="row" style="background-image: linear-gradient(84deg, #2b4f2f, #bcd12b);">
@@ -165,7 +195,7 @@
         </div>
       </div>
 
-      <footer class="bg-light p-3">
+      <footer class="bg-light p-3" style="color: #000000">
         <div class="row">
           <div class="col">
               &copy; 2023 Familienpraxis Behrendt
@@ -180,10 +210,7 @@
 
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <script type="text/javascript">
       $(document).ready(function() {});
