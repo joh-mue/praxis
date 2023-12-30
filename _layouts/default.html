@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      if (document.cookie.indexOf("sessiontag=") >= 0) {
+        console.log('Hi again.');
+      } else {
+        console.log('Creating sessiontag');
+        document.cookie="sessiontag=" + Math.trunc(Math.random() * 10000000) + "; expires=1";
+      }
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body class="d-flex flex-column h-100 bg-light">
+
+    {% include navbar.html %}
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <script type="module" src="assets/js/main.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {});
+    </script>
+  </body>
+</html>

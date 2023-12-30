@@ -1,97 +1,52 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <script type="text/javascript">
-      if (document.cookie.indexOf("sessiontag=") >= 0) {
-        console.log('Hi again.');
-      } else {
-        console.log('Creating sessiontag');
-        document.cookie="sessiontag=" + Math.trunc(Math.random() * 10000000) + "; expires=1";
-      }
-    </script>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
-
-    <title></title>
-  </head>
-  <body class="bg-light">
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary text-primary"> -->
-    <nav class="navbar navbar-expand-lg bg-dark text-white">
-      <div class="container">
-        <a class="navbar-brand py-4" href="/"><img src="assets/praxislogo.svg" width="180"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Startseite</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Das Team</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="leistungen.html">Leistungen</a>
-            </li>
-          </ul>
-          <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> -->
-          <span>Tel.: 0190/666-666  Mail: info(at)familienpraxis-behrendt.de</span>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container"  style="color: #ffffff;">
-      <div class="row">
-        <h1>Impressum</h1>
-      </div>
-    </div>
-
-    <div class="container">
-      <footer class="bg-light p-3" style="color: #000000">
-        <div class="row">
-          <div class="col">
-              &copy; 2023 Familienpraxis Behrendt
-          </div>
-          <div class="col text-end">
-              <a href="impressum.html">Impressum</a>
-              <span class="mx-2">|</span>
-              <a href="datenschutz.html">Datenschutzerklärung</a>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <script type="module" src="js/main.js"></script>
-    
-    <script type="text/javascript">
-      $(document).ready(function() {});
-    </script>
-  </body>
-</html>
+---
+layout: default
+---
+<div class="row">
+  <h1>Impressum</h1>
+  <p>Angaben gemäß § 5 TMG</p>
+  <p>Familienpraxis Behrendt
+    <br>Am Dorfplatz 17a
+    <br>19079 Sukow
+    <br>
+  </p>
+  <p> <strong>Vertreten durch:</strong>
+    <br>Falco Behrendt
+    <br>
+  </p>
+  <p><strong>Kontakt:</strong> 
+    <br>Telefon: {{ site.phone }}
+    <br>Fax: 03861/302529
+    <br>E-Mail: <a href='mailto:{{ site.email }}'>{{ site.email }}</a></br></p>
+    <p><strong>Umsatzsteuer-ID:</strong>
+    <br>Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid.
+    <br>
+    <br>
+    <strong>Wirtschafts-ID: </strong>
+    <br>Musterwirtschaftsid
+    <br>
+  </p>
+  <p><strong>Aufsichtsbehörde:</strong>
+    <br>Ärztekammer Mecklenburg-Vorpommern
+    <br>August-Bebel-Str. 9a
+    <br>18055 Rostock
+    <br>Tel.: +49 (0)381 492 80 0
+    <br>Fax +49 (0)381 492 80 80
+    <br>
+    <br>Kassenärztliche Vereinigung Mecklenburg-Vorpommern
+    <br>Körperschaft des öffentlichen Rechts
+    <br>Neumühler Str. 22
+    <br>19057 Schwerin
+    <br>Tel.: 0049(385)7431-0
+    <br>Fax: 0049(385)7431- 222
+  </p>
+    <br>
+  <p>
+    <strong>Haftungsausschluss: </strong>
+    <br>
+    <br><strong>Haftung für Links</strong>
+    <br>
+    <br>
+    Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+    <br>
+  </p>
+ </div>
