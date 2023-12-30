@@ -14,35 +14,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-    <!-- Custom Styleshee -->
-    <link rel="stylesheet" type="text/css" href="assets/my-custom.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="assets/my-custom.css">
-
     <title></title>
   </head>
-  <body>  <!-- style="background: #2b4f2f"> -->
-      <body>  <!-- style="background: #2b4f2f"> -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Familienpraxis–Behrendt</a>
+  <body class="bg-light">
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary text-primary"> -->
+    <nav class="navbar navbar-expand-lg bg-dark text-white">
+      <div class="container">
+        <a class="navbar-brand py-4" href="/"><img src="assets/praxislogo.svg" width="180"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Startseite</a>
+              <a class="nav-link active" aria-current="page" href="/">Startseite</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kontakt</a>
@@ -62,20 +55,26 @@
               </ul>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Leistungen</a>
+              <a class="nav-link" href="leistungen.html">Leistungen</a>
             </li>
           </ul>
           <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form> -->
-          <span>0190/666-666 info@familienpraxis-behrendt.de</span>
+          <span>Tel.: 0190/666-666  Mail: info(at)familienpraxis-behrendt.de</span>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <footer class="bg-light p-3">
+    <div class="container"  style="color: #ffffff;">
+      <div class="row">
+        <h1>Impressum</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="bg-light p-3" style="color: #000000">
         <div class="row">
           <div class="col">
               &copy; 2023 Familienpraxis Behrendt
@@ -88,5 +87,11 @@
         </div>
       </footer>
     </div>
+
+    <script type="module" src="js/main.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {});
+    </script>
   </body>
 </html>
