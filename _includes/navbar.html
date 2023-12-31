@@ -1,7 +1,7 @@
 <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary text-primary"> -->
-<nav class="navbar navbar-expand-lg bg-dark text-white">
+<nav class="navbar navbar-expand-lg bg-dark text-white shadow">
   <div class="container">
-    <a class="navbar-brand py-4" href="#"><img src="assets/images/praxislogo-light.svg" width="180"></a>
+    <a class="navbar-brand py-4" href="/"><img src="assets/images/praxislogo-light.svg" width="180"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,9 +16,12 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="/#oeffnungszeiten">Öffnungszeiten</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link text-white" href="/#team">Das Team</a>
-        </li>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link text-white" href="/#rezepte">Rezepte</a>
+        </li> -->
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
@@ -38,7 +41,9 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
-      <span>Tel.: {{ site.phone }}</span><span class="mx-3"></span><span> Mail: {{ site.email }} </span>
+      <span><i class="bi mx-3 bi-phone" style="font-size: 1rem; color: primary;"></i>{{ site.phone }}</span>
+      <span class="mx-3">|</span>
+      <span><i class="bi mx-3 bi-house-heart" style="font-size: 1rem; color: primary;"></i>{{ site.email }}</span>
     </div>
   </div>
 </nav>
