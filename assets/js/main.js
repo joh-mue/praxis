@@ -8,7 +8,7 @@ window.addEventListener('load', (event) => {
 //
 // This includes Popper and all of Bootstrap's JS plugins.
 
-import "assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import '/assets/js/bootstrap.bundle.min.js';
 
 
 //
