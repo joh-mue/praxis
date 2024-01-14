@@ -29,7 +29,9 @@
 
     {% include navbar.html %}
 
-    {% include announcement.html %}
+    {% if site.announcement %}
+      {% include announcement.html %}
+    {% endif %}
 
     <div class="container">
       {{ content }}

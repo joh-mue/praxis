@@ -1,8 +1,7 @@
 <div class="container-fluid">
   <div class="row py-2 bg-info text-center">
-      <strong>Elektronische Arbeitsunfähigkeitsbescheinigung (eAU) und E-Rezepte</strong>
-      <div class="pt-2">
-        Aktuell arbeiten wir noch an der Einführung neuer Telematikinfrastruktur. Bis diese komplett einsatzbereit ist, können wir leider noch keine elektronischen Arbeitsunfähigkeitsbescheinigungen (eAU) oder E-Rezepte für Sie ausstellen.
-      </div>
+    {% assign lastPost = site.posts.first %}
+      <strong>{{ lastPost.title }}</strong>
+      <div class="pt-2">{{ lastPost.content }}</div>
   </div>
 </div>
