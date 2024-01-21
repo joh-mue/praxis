@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 phone: '03861 / 537'
 address: Am Dorfplatz 17a, 19079 Sukow
-announcement: false
+announcement: true
 
 # Build settings
 # theme: minima
