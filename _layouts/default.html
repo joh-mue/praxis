@@ -29,7 +29,7 @@
 
     {% include navbar.html %}
 
-    {% if site.announcement %}
+    {% if site.posts.first.active %}
       {% include announcement.html %}
     {% endif %}
 
