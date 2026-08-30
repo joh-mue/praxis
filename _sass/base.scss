@@ -108,6 +108,19 @@ $success: #7952b3;
 
 @import "icon-list";
 
+// Links inside the announcement banner: Bootstrap's default $link-color is
+// still its blue, which clashes with the green banner.
+.announcement a {
+  color: map-get($theme-colors, "dark");
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: map-get($theme-colors, "dark");
+    text-decoration: none;
+  }
+}
+
 // body {
 //   padding: 1.5rem;
 // }
