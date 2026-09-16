@@ -1,6 +1,6 @@
 ---
 title: Wir suchen Verstärkung
-active: true
+active: false
 ---
 
 Für unsere Familienpraxis in Plate suchen wir zum nächstmöglichen Zeitpunkt eine
